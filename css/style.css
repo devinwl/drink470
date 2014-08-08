@@ -1,2 +1,93 @@
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #444; }
+
 a {
-  color: green; }
+  color: #999999;
+  transition: 0.2s; }
+
+a:hover {
+  color: #cccccc;
+  text-decoration: none; }
+
+a.active {
+  color: #a1fa75; }
+
+h2 {
+  font-family: "Oswald";
+  font-size: 1.8em;
+  color: #111; }
+
+.navbar {
+  margin: 20px 0; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      margin: 0; } }
+  .navbar a {
+    color: #000; }
+  .navbar .navbar-brand {
+    font-family: "Oswald";
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #ccc; }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-brand {
+        font-size: 1.5em; } }
+  .navbar .navbar-brand em {
+    font-style: normal;
+    color: #76ea3d; }
+
+.thumbs {
+  background: #111; }
+  .thumbs img {
+    width: 100%; }
+  .thumbs a:hover {
+    text-decoration: none; }
+  .thumbs .overlay {
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: "Oswald";
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 2em;
+    text-align: center;
+    display: block; }
+    .thumbs .overlay .title {
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: uppercase; }
+    .thumbs .overlay .subtitle {
+      font-size: 0.5em;
+      text-transform: none;
+      color: #666;
+      font-family: "Open Sans"; }
+  .thumbs .overlay:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+  .thumbs .thumb:hover .overlay {
+    opacity: 1.0; }
+
+.list-thumbs img {
+  width: 100%; }
+.list-thumbs .view-toggle {
+  font-size: 0.8em; }
+
+.detail img {
+  width: 100%; }
+.detail h2 {
+  line-height: 1.1;
+  margin: 0; }
+.detail h3 {
+  color: #666666;
+  font-size: 1em;
+  margin: 0; }
+.detail .rating {
+  margin: 10px 0;
+  color: #76ea3d; }

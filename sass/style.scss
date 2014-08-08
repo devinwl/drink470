@@ -1,5 +1,147 @@
-$lime-green: green;
+$lime-green: #76ea3d;
+$lime-green-active: #A1FA75;
+$link-color: #999;
+$link-color-hover: #ccc;
+
+$font: 'Open Sans';
+$title-font: 'Oswald';
+$title-color: #111;
+$subtitle-color: #666;
+
+$mobile-break: 768px;
+
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: #444;
+}
 
 a {
-    color: $lime-green;
+    color: $link-color;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+}
+
+a.active {
+    color: $lime-green-active;
+}
+
+h2 {
+    font-family: $title-font;
+    font-size: 1.8em;
+    color: #111;
+}
+
+.navbar {
+    margin: 20px 0;
+
+    @media screen and (max-width: $mobile-break) {
+        margin: 0;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .navbar-brand {
+        font-family: $title-font;
+        font-size: 2em;
+        letter-spacing: 2px;
+        color: #ccc;
+        @media screen and (max-width: $mobile-break) {
+            font-size: 1.5em;
+        }
+    }
+
+    .navbar-brand em {
+        font-style: normal;
+        color: $lime-green;
+    }
+}
+
+.thumbs {
+    background: #111;
+
+    img {
+        width: 100%;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .overlay {
+        background: rgba(0,0,0,0.75);
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-family: $title-font;
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s;
+        font-size: 2em;
+        text-align: center;
+        display: block;
+
+        .title {
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 0.5em;
+            text-transform: none;
+            color: #666;
+            font-family: $font;
+        }
+    }
+
+    .overlay:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+
+    .thumb:hover .overlay {
+        opacity: 1.0;
+    }
+}
+
+.list-thumbs {
+    img {
+        width: 100%;
+    }
+
+    .view-toggle {
+        font-size: 0.8em;
+    }
+}
+
+.detail {
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        line-height: 1.1;
+        margin: 0;
+    }
+
+    h3 {
+        color: $subtitle-color;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .rating {
+        margin: 10px 0;
+        color: $lime-green;
+    }
 }
