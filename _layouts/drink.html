@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="detail">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="img-container">
+          <img src="{{ page.image }}" />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h2>{{ page.title }}</h2>
+        <h3>{{ page.subtitle }}</h3>
+        <div class="rating"><!-- <i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i>--></div>
+        {{ content }}
+      </div>
+    </div>
+  </div><!-- /container -->
+</div><!-- /detail -->
