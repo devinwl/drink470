@@ -17,7 +17,8 @@ a.active {
 h2 {
   font-family: "Oswald";
   font-size: 1.8em;
-  color: #111; }
+  color: #111;
+  text-transform: capitalize; }
 
 .rating {
   margin: 10px 0;
