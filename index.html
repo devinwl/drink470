@@ -10,14 +10,14 @@ layout: index
           {% for post in site.posts %}
             <div class="col-sm-6">
               <div class="thumb row">
-                <a href="{{ post.url }}" class="overlay">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="overlay">
                   <div class="title">
                     {{ post.title }}
                     <div class="subtitle">{{ post.subtitle }}</div>
                     <!-- <div class="rating"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></div> -->
                   </div>
                 </a>
-                <img src="{{ post.thumb }}" />
+                <img src="{{ site.baseurl }}{{ post.thumb }}" />
               </div>
             </div>
 
