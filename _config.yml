@@ -2,3 +2,6 @@ name: "DRINK470"
 description: ""
 
 permalink: pretty
+baseurl: "/drink470"
+
+permalink: /:categories/:title
