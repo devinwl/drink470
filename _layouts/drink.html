@@ -13,7 +13,17 @@ layout: default
       <div class="col-md-7">
         <h2>{{ page.title }}</h2>
         <h3>{{ page.subtitle }}</h3>
-        <div class="rating"><!-- <i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i>--></div>
+        <div class="rating">
+          {% if page.rating %}
+            {% for i in (1..page.rating) %}
+              <i class="glyphicon glyphicon-star"></i>
+            {% endfor %}
+
+            {% for i in (1..site.maxrating) offset:page.rating %}
+              <i class="glyphicon glyphicon-star-empty"></i>
+            {% endfor %}
+          {% endif %}
+        </div>
         {{ content }}
       </div>
     </div>

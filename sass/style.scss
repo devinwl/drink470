@@ -6,7 +6,7 @@ $link-color-hover: #ccc;
 $font: 'Open Sans';
 $title-font: 'Oswald';
 $title-color: #111;
-$subtitle-color: #666;
+$subtitle-color: #999;
 
 $mobile-break: 768px;
 
@@ -141,7 +141,7 @@ h2 {
         .subtitle {
             font-size: 0.5em;
             text-transform: none;
-            color: #666;
+            color: $subtitle-color;
             font-family: $font;
         }
 

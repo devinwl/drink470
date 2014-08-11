@@ -13,8 +13,22 @@ layout: index
                 <a href="{{ site.baseurl }}{{ post.url }}" class="overlay">
                   <div class="title">
                     {{ post.title }}
-                    <div class="subtitle">{{ post.subtitle }}</div>
-                    <!-- <div class="rating"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></div> -->
+                    <div class="subtitle">
+                      {% if post.subtitle %}
+                        {{ post.subtitle }}
+                      {% endif %}
+                    </div>
+                    <div class="rating">
+                      {% if post.rating %}
+                        {% for i in (1..post.rating) %}
+                          <i class="glyphicon glyphicon-star"></i>
+                        {% endfor %}
+
+                        {% for i in (1..site.maxrating) offset:post.rating %}
+                          <i class="glyphicon glyphicon-star-empty"></i>
+                        {% endfor %}
+                      {% endif %}
+                    </div>
                   </div>
                 </a>
                 <img src="{{ site.baseurl }}{{ post.thumb }}" />

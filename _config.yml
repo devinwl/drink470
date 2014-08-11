@@ -5,3 +5,5 @@ permalink: pretty
 baseurl: "/drink470"
 
 permalink: /:categories/:title
+
+maxrating: 5

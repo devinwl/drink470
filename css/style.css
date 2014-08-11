@@ -99,7 +99,7 @@ h2 {
     .thumbs .overlay .subtitle {
       font-size: 0.5em;
       text-transform: none;
-      color: #666;
+      color: #999999;
       font-family: "Open Sans"; }
     .thumbs .overlay .rating {
       @extends .rating;
@@ -129,6 +129,6 @@ h2 {
   line-height: 1.1;
   margin: 0; }
 .detail h3 {
-  color: #666666;
+  color: #999999;
   font-size: 1em;
   margin: 0; }
