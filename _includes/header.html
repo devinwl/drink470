@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DRINK470</title>
+    <title>DRINK470{% if page.title %} | {{ page.title }}{% endif %}{% if page.subtitle %} - {{ page.subtitle }}{% endif %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +35,10 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{{ site.baseurl }}/drinks/">Drinks</a></li>
-            <li><a href="{{ site.baseurl }}/about/">About</a></li>
+            {% assign url = page.url|remove:'/index.html' %}
+            {% for link in site.navigation %}
+              <li {% if url == link.url or link.url == page.active %}class="active"{% endif %}><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -1,0 +1,6 @@
+<div class="view-toggle pull-right">
+    {% assign url = page.url|remove:'/index.html' %}
+    {% for link in site.drinks_sub_navigation %}
+        <a {% if url == link.url %}class="active"{% endif %} href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
+</div>

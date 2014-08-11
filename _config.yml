@@ -5,5 +5,16 @@ permalink: pretty
 baseurl: "/drink470"
 
 permalink: /:categories/:title
-
 maxrating: 5
+
+navigation:
+    -   title: Drinks
+        url: /drinks
+    -   title: About
+        url: /about
+
+drinks_sub_navigation:
+    -  title: Grid
+       url: /drinks
+    -  title: List
+       url: /drinks/list
