@@ -6,7 +6,7 @@ active: /drinks
 
 <p class="intro">Monster Energy is an energy drink, launched by Monster Beverage Corporation in April 2002. The regular flavor comes in a black can with a green tear-shaped M logo, implied to have been torn by the claws of a monster. The company is also known for supporting many extreme sports events such as BMX, Motocross, skateboarding and snowboarding, as well as eSports.</p>
 
-<div class="list-thumbs">
+<div class="list-list">
     {% include drinks_sub_navigation.html %}
 
     {% for category in site.categories %}
@@ -15,7 +15,7 @@ active: /drinks
         {% for posts in category %}
           {% for post in posts %}
             {% if post.url %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{% if post.subtitle %} - {{ post.subtitle }}{% endif %}</a></li>
             {% endif %}
           {% endfor %}
         {% endfor %}

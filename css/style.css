@@ -118,10 +118,19 @@ h2 {
   .thumbs .thumb:hover .overlay .title {
     padding-top: 0; }
 
+.list-thumbs,
+.list-list {
+  margin-bottom: 20px; }
+
 .list-thumbs img {
   width: 100%; }
 .list-thumbs .view-toggle {
   font-size: 0.8em; }
+
+.list-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 .detail img {
   width: 100%; }

@@ -171,6 +171,11 @@ h2 {
     }
 }
 
+.list-thumbs,
+.list-list {
+    margin-bottom: 20px;
+}
+
 .list-thumbs {
     img {
         width: 100%;
@@ -178,6 +183,14 @@ h2 {
 
     .view-toggle {
         font-size: 0.8em;
+    }
+}
+
+.list-list {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 }
 
