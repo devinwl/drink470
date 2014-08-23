@@ -5,5 +5,6 @@ image: /images/donkey-kong-jungle-juice.jpg
 title: Donkey Kong
 subtitle: Jungle Juice
 category: singles
+rating: 5.0
 ---
 

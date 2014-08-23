@@ -14,18 +14,18 @@ title: Drinks
             <div class="col-sm-4">
                 <div class="row">
                     {% for posts in category %}
-                      {% for post in posts %}
-                      {% if post.url %}
-                        <div class="col-xs-6">
-                            <div class="thumb">
-                                <a href="{{ site.baseurl }}{{ post.url }}">
-                                    <img src="{{ site.baseurl }}{{ post.thumb }}">
-                                </a>
+                        {% for post in posts %}
+                          {% if post.url %}
+                            <div class="col-xs-6">
+                                <div class="thumb">
+                                    <a href="{{ site.baseurl }}{{ post.url }}">
+                                        <img src="{{ site.baseurl }}{{ post.thumb }}">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        {% cycle '', '</div></div><div class="col-sm-4"><div class="row">' %}
-                        {% endif %}
-                      {% endfor %}
+                            {% cycle category: '', '</div></div><div class="col-sm-4"><div class="row">' %}
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
                 </div>
             </div>

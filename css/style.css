@@ -92,7 +92,7 @@ h2 {
       display: inline-block;
       vertical-align: middle;
       text-transform: uppercase;
-      padding-top: 10px;
+      padding: 10px 15px 0 15px;
       transition: 0.2s;
       line-height: 1.2;
       text-shadow: black 1px 1px 0px; }
@@ -124,13 +124,16 @@ h2 {
 
 .list-thumbs img {
   width: 100%; }
-.list-thumbs .view-toggle {
-  font-size: 0.8em; }
+.list-thumbs .thumb {
+  padding-bottom: 30px; }
 
 .list-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
+
+.view-toggle {
+  font-size: 0.8em; }
 
 .detail img {
   width: 100%; }

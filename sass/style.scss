@@ -132,7 +132,7 @@ h2 {
             display: inline-block;
             vertical-align: middle;
             text-transform: uppercase;
-            padding-top: 10px;
+            padding: 10px 15px 0 15px;
             transition: 0.2s;
             line-height: 1.2;
             text-shadow: rgb(0, 0, 0) 1px 1px 0px;
@@ -181,8 +181,8 @@ h2 {
         width: 100%;
     }
 
-    .view-toggle {
-        font-size: 0.8em;
+    .thumb {
+        padding-bottom: 30px;
     }
 }
 
@@ -192,6 +192,10 @@ h2 {
         margin: 0;
         padding: 0;
     }
+}
+
+.view-toggle {
+    font-size: 0.8em;
 }
 
 .detail {

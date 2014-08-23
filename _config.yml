@@ -7,6 +7,8 @@ baseurl: "/drink470"
 permalink: /:categories/:title
 maxrating: 5
 
+categories: ["test", "test2", "singles"]
+
 navigation:
     -   title: Drinks
         url: /drinks
